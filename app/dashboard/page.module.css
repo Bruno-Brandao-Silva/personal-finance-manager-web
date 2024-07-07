@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+}
+
+.side_bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-areas:
+        'grid_1_1 grid_1_2 grid_1_3'
+        'grid_2 grid_2 grid_2';
+    grid-gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.grid_1_1,
+.grid_1_2,
+.grid_1_3,
+.grid_2 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.grid_1_1 {
+    grid-area: grid_1_1;
+}
+
+.grid_1_2 {
+    grid-area: grid_1_2;
+}
+
+.grid_1_3 {
+    grid-area: grid_1_3;
+}
+
+.grid_2 {
+    grid-area: grid_2;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.progressContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.progressBar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+}
+
+.progress {
+    height: 24px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+}
